@@ -1,0 +1,13 @@
+public class variabel {
+
+	public static void main(String[] args) {
+		
+	int a = 10;
+	String baca = "assalamualaikum";
+	
+	System.out.println("nilai a adalah : "+a);
+	System.out.println("nilai baca adalah : "+baca);
+
+	}
+
+}
