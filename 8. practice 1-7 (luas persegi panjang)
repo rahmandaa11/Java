@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class dataranda {
+public static void main (String[] args) {
+	System.out.println("Luas Persegi Panjang");
+	int lebar;
+	System.out.printf("Masukkan lebar : ");
+	Scanner inputl = new Scanner(System.in);
+	lebar = Integer.parseInt(inputl.next());
+	
+	int panjang;
+	System.out.print("Masukkan panjang : ");
+	Scanner inputp = new Scanner(System.in);
+	panjang = Integer.parseInt(inputp.next());
+	
+    int a = lebar;
+    int b = panjang;
+    a*=b;
+    System.out.println("Luas Persegi Panjang : "+a);
+    
+    if (a > 0) {
+    	if (a > 100) {
+    		System.out.println("Sangat Luas");
+    	} else if (a > 50){
+    		System.out.println("Ukuran Menengah");
+    	} else {
+    		System.out.println("Sempit");
+    	}
+    		}else {
+    	System.out.println("Tidak memiliki luas");
+    }
+}
+}
