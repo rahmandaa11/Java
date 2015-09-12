@@ -1,0 +1,25 @@
+public class operator {
+ 
+	public static void main (String [] args) {
+		
+	byte a = 1;
+	byte b = 2;
+	byte c = 3;
+	
+	a+=b; // a = a+b
+	a+=c; // a = a+c, nilai a dalam a+c adalah nilai hasil penjumlahan a+b
+	
+	System.out.println("nilai dari perhitungan anda : "+a);
+	
+	// atau juga bisa seperti ini
+	
+	byte d = 0;
+	byte f = 0;
+	d+=1+b; // d= a+b
+	f+=b+c; // f= b+c
+	System.out.println("");
+	System.out.println("nilai dari d : "+d);
+	System.out.println("nilai dari f : "+f);
+	
+	}
+}
