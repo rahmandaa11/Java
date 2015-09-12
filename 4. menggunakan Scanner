@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class nama {
+	public static void main (String [] args) {
+		Scanner baca = new Scanner (System.in);
+		System.out.print("Masukkan nama anda : ");
+		String nama = baca.next();
+		System.out.println("Nama anda adalah "+nama);
+	}
+
+}
