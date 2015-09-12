@@ -1,0 +1,8 @@
+public class assalamualaikum {
+
+	public static void main(String[] args) {
+		// bisa gak
+System.out.println("assalamualaikum");
+	}
+
+}
