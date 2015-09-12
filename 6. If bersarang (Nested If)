@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class IFbersarang {
+	public static void main (String [] args) {
+		int nilai;
+		System.out.printf("masukkan nilai : ");
+		Scanner angka = new Scanner (System.in);
+		nilai = Integer.parseInt(angka.next());
+		
+		if (nilai !=0) {
+		 if (nilai>10) {
+				System.out.println("nilai lebih dari 10");
+			}
+			else {
+				System.out.println("nilai kurang dari 10");
+			}	
+		} else {
+			System.out.println("nilai adalah 0");
+		}
+	}
+}
