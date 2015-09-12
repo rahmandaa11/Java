@@ -1,3 +1,4 @@
+//ini untuk menghitung data sederhana
 public class operator {
  
 	public static void main (String [] args) {
