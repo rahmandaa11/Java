@@ -1,0 +1,19 @@
+public class perintahIf {
+
+	public static void main(String[] args) {
+		
+		int x = 11;
+		if (x > 5) {
+			System.out.print("nilai x lebi dari 5");
+		}
+		else if (x < 5){
+			System.out.print("nilai x kurang dari 5");
+		} else {
+			System.out.print("keluaran dari else ");
+		}
+				
+		
+
+	}
+
+}
