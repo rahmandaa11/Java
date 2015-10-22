@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class apa_himti{
+	
 	public static void main(String[]args){
-		System.out.println("");
+				System.out.println("");
 		System.out.println("Program makanan");
 		System.out.println("-------------------");
 		System.out.println("");
@@ -9,6 +10,7 @@ public class apa_himti{
 	}
 	//Menu utama saat program akan di jalankan
 	static void menu_utama(){
+		System.out.println();
 		Scanner inputmenu = new Scanner(System.in);
 		System.out.println("1. Pilih makanan dan minuman");
 		System.out.println("2. Exit");
@@ -17,7 +19,7 @@ public class apa_himti{
 		System.out.println();
 		
 		//Pendeklarasian class dari apa_himti menjadi makanan.apa_himti
-		apa_himti.makanan();
+		
 		switch(pilih){
 			case 1:
 				makanan();
@@ -33,8 +35,8 @@ public class apa_himti{
 	//Sub menu dalam penghitungan makan
 	static void makanan(){
 		String nama_makanan=" ", nama_minuman=" ";
-	int a,c, d, totalmakan;
 	
+
 		Scanner inputmakan = new Scanner(System.in);
 		System.out.println("=============== MENU MAKANAN ================");
 		System.out.println("1. Bakso super medan 	Rp. 6900");
@@ -70,7 +72,7 @@ public class apa_himti{
 		}
 		System.out.print("Ingin membeli berapa banyak : ");
 		int b = inputmakan.nextInt();
-		totalmakan = harga_makanan*b;
+		int totalmakan = harga_makanan*b;
 				
 		Scanner inputminum = new Scanner(System.in);
 		System.out.println("=============== MENU MINUMAN ================");
@@ -122,11 +124,18 @@ public class apa_himti{
 		System.out.print("Masukan uang si pembeli : ");
 		int pembeli = inputstruk.nextInt();
 		int kembalian = pembeli - total;
+		if (pembeli > total){
 		System.out.println(" ");
 		System.out.println(" ");
 		System.out.println("Uang kembaliannya adalah Rp."+kembalian);
+		} else if (pembeli == total){
+		System.out.println(" ");
+		System.out.println("Uang anda pas");
+		} else {
+		kembalian = total - pembeli;	
+		System.out.println();
+			System.out.println("Uang anda kurang Rp."+kembalian+" lagi");
+		}
+	menu_utama();
 	}
-	
-	
-	
 	}
